@@ -1,0 +1,23 @@
+{
+  "name": "starter-project",
+  "version": "1.0.0",
+  "description": "HTML + CSS starter project",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server 'www' --files 'www'",
+    "lint": "eslint \"./www/\"",
+    "prettier": "prettier --write \"./www/\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.14.3",
+    "lint": "0.8.19",
+    "prettier": "2.8.4",
+    "sass": "^1.58.3"
+  }
+}

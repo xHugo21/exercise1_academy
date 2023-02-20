@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.example_img {
+  width: 30%;
+  height: 30%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+/*# sourceMappingURL=styles.css.map */
