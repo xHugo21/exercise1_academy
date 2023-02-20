@@ -1,3 +1,8 @@
+// Variables
+$primary_color: rgb(159, 166, 167);
+$secondary_color: rgb(57, 184, 65);
+
+// Styles
 header {
     display: flex;
     justify-content: center;
@@ -6,6 +11,7 @@ header {
 .example_img{
     width: 30%;
     height: 30%;
+    //size: 30%;
 }
 
 main{

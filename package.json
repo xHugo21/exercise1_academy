@@ -6,7 +6,8 @@
   "scripts": {
     "start": "browser-sync start --server 'www' --files 'www'",
     "lint": "eslint \"./www/\"",
-    "prettier": "prettier --write \"./www/\""
+    "prettier": "prettier --write \"./www/\"",
+    "sass": "sass --watch www/scss/styles.scss www/css/styles.css"
   },
   "keywords": [],
   "author": "",
