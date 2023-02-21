@@ -3,9 +3,14 @@ $primary_color: rgb(159, 166, 167);
 $secondary_color: rgb(57, 184, 65);
 
 // Styles
+body{
+    background-color: $primary_color;
+}
+
 header {
     display: flex;
     justify-content: center;
+    margin-bottom: 1%;
 }
 
 main{
@@ -26,10 +31,23 @@ aside {
     flex-wrap: wrap;
 }
 
+.article_result{
+    margin: 1%;
+}
+
 .result_footer{
     display: flex;
     flex-direction: row;
-    p {
+    justify-content: space-between;
+    .alive {
         background-color:rgb(57, 184, 65)
+    }
+
+    .dead {
+        background-color: red;
+    }
+
+    .unknown{
+        background-color: darkgrey;
     }
 }

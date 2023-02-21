@@ -1,6 +1,11 @@
+body {
+  background-color: rgb(159, 166, 167);
+}
+
 header {
   display: flex;
   justify-content: center;
+  margin-bottom: 1%;
 }
 
 main {
@@ -19,12 +24,23 @@ aside h2 {
   flex-wrap: wrap;
 }
 
+.article_result {
+  margin: 1%;
+}
+
 .result_footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.result_footer p {
+.result_footer .alive {
   background-color: rgb(57, 184, 65);
+}
+.result_footer .dead {
+  background-color: red;
+}
+.result_footer .unknown {
+  background-color: darkgrey;
 }
 
 /*# sourceMappingURL=styles.css.map */
