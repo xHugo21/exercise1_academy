@@ -18,5 +18,5 @@ npm start
 
 ***
 
-## Funtionality
+## Functionality
 This interactive webpage allows the user to search for any characters from the Rick and Morty show by name and status. The characters are fetched from this [api](https://rickandmortyapi.com/)
