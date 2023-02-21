@@ -8,13 +8,28 @@ header {
     justify-content: center;
 }
 
-.example_img{
-    width: 30%;
-    height: 30%;
-    //size: 30%;
-}
-
 main{
     display: grid;
     grid-template-columns: 1fr 5fr;
+}
+
+aside {
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.search_results{
+    display: flex;
+    justify-content: justify;
+    flex-wrap: wrap;
+}
+
+.result_footer{
+    display: flex;
+    flex-direction: row;
+    p {
+        background-color:rgb(57, 184, 65)
+    }
 }

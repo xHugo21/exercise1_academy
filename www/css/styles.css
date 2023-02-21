@@ -3,14 +3,28 @@ header {
   justify-content: center;
 }
 
-.example_img {
-  width: 30%;
-  height: 30%;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
+}
+
+aside h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.search_results {
+  display: flex;
+  justify-content: justify;
+  flex-wrap: wrap;
+}
+
+.result_footer {
+  display: flex;
+  flex-direction: row;
+}
+.result_footer p {
+  background-color: rgb(57, 184, 65);
 }
 
 /*# sourceMappingURL=styles.css.map */
