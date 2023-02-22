@@ -1,0 +1,2 @@
+- add more pages when scrolling down
+- case with there are two status checked
