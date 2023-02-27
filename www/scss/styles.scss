@@ -5,12 +5,22 @@ $secondary_color: rgb(57, 184, 65);
 // Styles
 body{
     background-color: $primary_color;
+    font-family: Arial, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
     margin-bottom: 1%;
+
+    .search_bar{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius:10px;
+        border-color: white;
+        width:50%;
+    }
 }
 
 main{
@@ -50,4 +60,9 @@ aside {
     .unknown{
         background-color: darkgrey;
     }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }

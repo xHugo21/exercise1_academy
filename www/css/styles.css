@@ -1,11 +1,20 @@
 body {
   background-color: rgb(159, 166, 167);
+  font-family: Arial, sans-serif;
 }
 
 header {
   display: flex;
   justify-content: center;
   margin-bottom: 1%;
+}
+header .search_bar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  border-color: white;
+  width: 50%;
 }
 
 main {
@@ -41,6 +50,11 @@ aside h2 {
 }
 .result_footer .unknown {
   background-color: darkgrey;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

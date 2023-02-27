@@ -1,2 +1,2 @@
-- add more pages when scrolling down
-- case with there are two status checked
+- automatic reload on scrolldown
+- review case when two status are selected
