@@ -4,14 +4,16 @@ $secondary_color: rgb(57, 184, 65);
 
 // Styles
 body{
-    background-color: $primary_color;
+    background-color: beige;
     font-family: Arial, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 1%;
+    align-items: center;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
 
     .search_bar{
         display: flex;
@@ -19,7 +21,8 @@ header {
         background-color: white;
         border-radius:10px;
         border-color: white;
-        width:50%;
+        width:20%;
+        height: 100%;
     }
 }
 
@@ -29,6 +32,10 @@ main{
 }
 
 aside {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 2%;
+    background-color: lightgrey;
     h2{
         display: flex;
         justify-content: center;
@@ -60,9 +67,4 @@ aside {
     .unknown{
         background-color: darkgrey;
     }
-}
-
-footer{
-    display: flex;
-    justify-content: center;
 }

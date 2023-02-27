@@ -1,12 +1,14 @@
 body {
-  background-color: rgb(159, 166, 167);
+  background-color: beige;
   font-family: Arial, sans-serif;
 }
 
 header {
   display: flex;
   justify-content: center;
-  margin-bottom: 1%;
+  align-items: center;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
 }
 header .search_bar {
   display: flex;
@@ -14,7 +16,8 @@ header .search_bar {
   background-color: white;
   border-radius: 10px;
   border-color: white;
-  width: 50%;
+  width: 20%;
+  height: 100%;
 }
 
 main {
@@ -22,6 +25,12 @@ main {
   grid-template-columns: 1fr 5fr;
 }
 
+aside {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 2%;
+  background-color: lightgrey;
+}
 aside h2 {
   display: flex;
   justify-content: center;
@@ -50,11 +59,6 @@ aside h2 {
 }
 .result_footer .unknown {
   background-color: darkgrey;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
