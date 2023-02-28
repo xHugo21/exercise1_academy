@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color: white;
   font-family: Arial, sans-serif;
 }
 
@@ -15,7 +15,7 @@ header .search_bar {
   justify-content: center;
   background-color: white;
   border-radius: 10px;
-  border-color: white;
+  border-color: purple;
   width: 20%;
   height: 100%;
 }
@@ -26,10 +26,10 @@ main {
 }
 
 aside {
-  border: 2px solid black;
+  border: 2px solid purple;
   border-radius: 15px;
   padding: 2%;
-  background-color: lightgrey;
+  background-color: white;
 }
 aside h2 {
   display: flex;

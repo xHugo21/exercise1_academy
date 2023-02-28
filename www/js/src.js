@@ -8,42 +8,35 @@ function debounce(func, timeout=300){
     }; 
 }
 
-// Triggered when search bar or checkboxes are triggered
-function search_update(){
+// Auxiliary debounce call functions
+const debounce_change = debounce(() => update_results());
+const debounce_load_more = debounce(() => load_more_results());
+
+// Updates search results based on name and status
+async function update_results(){
+    // Variables
+    var url;
     let status = [];
+    let gender = [];
     const name = search_bar.value;
 
-    // Update status array with checked boxes
-    checkbox.forEach(element => {
+    // Update status checkboxes
+    checkbox_status.forEach(element => {
         if (element.checked == true){
+            console.log(element);
             status.push(element.value);
         }
     })
 
-    // Call update_results with name and status parameters
-    update_results(name, status);
-}
+    // Update gender checkboxes
+    checkbox_gender.forEach(element => {
+        if (element.checked == true){
+            console.log(element);
+            gender.push(element.value);
+        }
+    })
 
-// Auxiliary debounce call functions
-const debounce_change = debounce(() => search_update());
-const debounce_load_more = debounce(() => load_more_results());
-
-// Updates search results based on name and status
-async function update_results(name, status){
-    // In case there is nothing on the search bar, display all characters
-    var url;
-
-    if (status.length == 2){ //TODO
-        url = "https://rickandmortyapi.com/api/character/?name="+name+"&status="+status[0]+"&status="+status[1];
-    }
-
-    else if (status.length == 1){
-        url = "https://rickandmortyapi.com/api/character/?name="+name+"&status="+status[0];
-    }
-
-    else if (status.length == 3 || status.length == 0){
-        url = "https://rickandmortyapi.com/api/character/?name="+name;
-    }
+    url = "https://rickandmortyapi.com/api/character/?name="+name+"&status="+status+"&gender="+gender;
 
     // Wait for api response
     const api = await fetch(url);
@@ -91,7 +84,8 @@ async function load_more_results(){
 // MAIN FLOW OF THE PROGRAM
 //VARIABLES
 let data;
-const checkbox = document.getElementsByName("checkbox");
+const checkbox_status = document.getElementsByName("checkbox_status");
+const checkbox_gender = document.getElementsByName("checkbox_gender");
 const search_bar = document.querySelector(".search_bar");
 
 // Set initial results
@@ -99,7 +93,10 @@ update_results("", ["alive", "dead", "unknown"]);
 
 // Event listeners
 search_bar.addEventListener("keyup", function(){debounce_change();}); // Search bar update
-checkbox.forEach(element=>{ // Checkboxes update
+checkbox_status.forEach(element=>{ // Checkboxes status update
+    element.addEventListener("click", function(){debounce_change();}); 
+})
+checkbox_gender.forEach(element=>{ // Checkboxes gender update
     element.addEventListener("click", function(){debounce_change();}); 
 })
 
