@@ -86,6 +86,7 @@ async function load_more_results(){
 let data;
 const checkbox_status = document.getElementsByName("checkbox_status");
 const checkbox_gender = document.getElementsByName("checkbox_gender");
+const search_bar = document.querySelector(".search_bar")
 
 // Set initial results
 update_results("", ["alive", "dead", "unknown"]);
