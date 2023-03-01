@@ -61,4 +61,13 @@ aside h2 {
   background-color: darkgrey;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid purple;
+  border-bottom: 2px solid purple;
+  width: max;
+}
+
 /*# sourceMappingURL=styles.css.map */
